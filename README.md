@@ -26,8 +26,8 @@ some installed dependencies are:
     pandas
 
 
-
 Heroku deploy
+
     heroku login
 
     heroku create — will create an app in heroku
@@ -37,6 +37,6 @@ Heroku deploy
     git push heroku main — pushes the changes to heroku
 
 
-## Documentation 
+### Documentation 
 
 Refer to:
