@@ -2,6 +2,7 @@ from flask_restful import Resource
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+from flask.wrappers import Response
 
 
 class Cedears(Resource):
@@ -30,4 +31,7 @@ class Cedears(Resource):
     df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia', 'Mes', 'Ano'])
 
     # return as json
-    return(df_bs.to_json(),200) 
+    resp = Response(response=df_bs.to_json(orient='index'),
+        status=200,
+        mimetype="application/json")
+    return(resp)
