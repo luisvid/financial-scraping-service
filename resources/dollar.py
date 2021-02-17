@@ -33,7 +33,7 @@ class Dollar(Resource):
     # return as json
     # return(df_bs.to_json(orient='index'),200)
 
-    resp = Response(response=df_bs.to_json(),
+    resp = Response(response=df_bs.to_json(orient='index'),
         status=200,
         mimetype="application/json")
     return(resp)
