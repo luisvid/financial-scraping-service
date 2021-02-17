@@ -8,15 +8,19 @@ Python 3.9.0
 
 ### Installing
 
-Clone the repo:
+## Clone the repo:
 
-    git clone https://github.com/luisvid/financial-scraping-service.git
+```sh
+git clone https://github.com/luisvid/financial-scraping-service.git
+```
 
-Install dependencies:
+## Install dependencies:
 
-    pip install -r requirements.txt
+```sh
+pip install -r requirements.txt
+```
 
-some installed dependencies are:
+## some installed dependencies are:
 
     Flask-RESTful API
 
@@ -29,14 +33,21 @@ some installed dependencies are:
 
 Heroku deploy
 
-    heroku login
+```sh
+heroku login
+```
 
-    heroku create — will create an app in heroku
+```sh
+heroku create — will create an app in heroku
+```
 
-    heroku git:remote -a remote-repo-name — connects to the remote repository
+```sh
+heroku git:remote -a remote-repo-name — connects to the remote repository
+```
 
-    git push heroku main — pushes the changes to heroku
-
+```sh
+git push heroku main — pushes the changes to heroku
+```
 
 ### Documentation 
 

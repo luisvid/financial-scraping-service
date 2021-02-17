@@ -30,4 +30,4 @@ class Dollar(Resource):
     df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia', 'Mes', 'Ano'])
 
     # return as json
-    return(df_bs.to_json(),200)
+    return(df_bs.to_json(orient='records'),200)
