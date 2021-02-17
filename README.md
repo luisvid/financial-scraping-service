@@ -52,3 +52,6 @@ git push heroku main — pushes the changes to heroku
 ### Documentation 
 
 Refer to:
+
+[Pandas DataFrame is not JSON serializable](https://github.com/flask-restful/flask-restful/issues/269)
+Flask-RESTful's json serialization isn't at fault here. If you return an object from a restful.Resource method, Flask-RESTful will call json.dumps on it. In this case, you're using a custom class that defines it's own serialization method: to_json(). To bypass Flask-RESTful's json.dumps attempt, @scls19fr has the correct fix: create a raw Response object.
