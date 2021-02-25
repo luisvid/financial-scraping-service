@@ -3,7 +3,7 @@ from flask.wrappers import Response
 #import requests
 #from bs4 import BeautifulSoup
 import pandas as pd
-from .func import table2json 
+from .func.table2json import scrapToJson
 
 
 class Dollar(Resource):
@@ -11,7 +11,7 @@ class Dollar(Resource):
 
     # table index = 0 Dollar table
     row_list = list()
-    row_list = table2json(0)
+    row_list = scrapToJson(0)
 
     # Create Pandas Dataframe
     # Adds column names
