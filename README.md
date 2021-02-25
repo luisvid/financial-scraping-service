@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 ## some installed dependencies are:
 
+    Flask
+
     Flask-RESTful API
 
     beautifulsoup4 
