@@ -6,6 +6,7 @@ from resources.bonos_usd_usd import BonosUsdUsd
 from resources.bonos_usd_ars import BonosUsdArs
 from resources.bonos_ars import BonosArs
 from resources.cedears import Cedears
+from resources.rofex import Rofex
 from resources.echo import Echo
 
 app = Flask(__name__)
@@ -27,6 +28,7 @@ api.add_resource(BonosUsdUsd, "/bonosusd")
 api.add_resource(BonosUsdArs, "/bonosusdars")
 api.add_resource(BonosArs, "/bonosars")
 api.add_resource(Cedears, "/cedears")
+api.add_resource(Rofex, "/rofex")
 
 
 if __name__ == "__main__":
