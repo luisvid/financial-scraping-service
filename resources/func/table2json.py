@@ -11,7 +11,7 @@ def scrapToJson (tableIndex):
 
     # Initiate beautiful and list element to extract all the rows in the table
     soup = BeautifulSoup(r.content, "html.parser")
-    table = soup.findAll("table", {"class": ["tablapanel2"]})[0]
+    table = soup.findAll("table", {"class": ["tablapanel2"]})[tableIndex]
     rows = table.find_all('tr')
     row_list = list()
 
