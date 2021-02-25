@@ -2,6 +2,9 @@ from flask import Flask
 from flask_restful import Api
 
 from resources.dollar import Dollar
+from resources.bonos_usd_usd import BonosUsdUsd
+from resources.bonos_usd_ars import BonosUsdArs
+from resources.bonos_ars import BonosArs
 from resources.cedears import Cedears
 from resources.echo import Echo
 
@@ -20,6 +23,9 @@ def after_request(response):
 # API endpoints
 api.add_resource(Echo, "/echo/<string:echo>")
 api.add_resource(Dollar, "/dollar")
+api.add_resource(BonosUsdUsd, "/bonosusd")
+api.add_resource(BonosUsdArs, "/bonosusdars")
+api.add_resource(BonosArs, "/bonosars")
 api.add_resource(Cedears, "/cedears")
 
 
