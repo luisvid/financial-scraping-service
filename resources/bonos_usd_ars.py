@@ -7,9 +7,9 @@ from .func.table2json import scrapToJson
 class BonosUsdArs(Resource):
   def get(self):
     
-    # table index = 13
+    # table index = 14
     row_list = list()
-    row_list = scrapToJson(13)
+    row_list = scrapToJson(14)
 
     # Create Pandas Dataframe
     df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia'])
