@@ -7,9 +7,9 @@ from .func.table2json import scrapToJson
 class Cedears(Resource):
   def get(self):    
     
-    # table index = 16 
+    # table index = 18
     row_list = list()
-    row_list = scrapToJson(16)
+    row_list = scrapToJson(18)
 
     # Create Pandas Dataframe
     df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia', 'Mes', 'Ano'])

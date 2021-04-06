@@ -26,13 +26,15 @@ def after_request(response):
 # API endpoints
 api.add_resource(Echo, "/echo/<string:echo>")
 api.add_resource(Dollar, "/dollar")
+api.add_resource(Spmerval, "/spmerval")
 api.add_resource(BonosUsdUsd, "/bonosusd")
 api.add_resource(BonosUsdArs, "/bonosusdars")
 api.add_resource(BonosArs, "/bonosars")
 api.add_resource(Cedears, "/cedears")
 api.add_resource(Rofex, "/rofex")
-api.add_resource(Spmerval, "/spmerval")
 api.add_resource(Rofex20, "/rofex20")
+
+
 
 
 if __name__ == "__main__":

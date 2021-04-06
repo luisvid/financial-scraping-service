@@ -7,9 +7,9 @@ from .func.table2json import scrapToJson
 class Rofex(Resource):
   def get(self):    
     
-    # Rofex table index = 18 
+    # Rofex table index = 19
     row_list = list()
-    row_list = scrapToJson(18)
+    row_list = scrapToJson(19)
 
     # Create Pandas Dataframe
     df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Var', 'Dia'])

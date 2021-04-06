@@ -7,12 +7,12 @@ from .func.table2json import scrapToJson
 class BonosUsdUsd(Resource):
   def get(self):
     
-    # table index = 13
+    # table index = 15
     row_list = list()
-    row_list = scrapToJson(13)
+    row_list = scrapToJson(15)
 
     # Create Pandas Dataframe
-    df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia'])
+    df_bs = pd.DataFrame(row_list,columns=['Especie','Ultimo','Dia', 'Mes', 'Ano'])
 
     # return as json
     resp = Response(response=df_bs.to_json(orient='index'),
